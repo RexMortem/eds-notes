@@ -1,6 +1,6 @@
 # Module Overview
 
-- Analysis of Algorithms 
+- [[Analysis of Algorithms]] 
 	- Asymptotic Analysis (big O notation, $\Theta$, $\Omega$ from cs126 or similar)
 	- Recursive Analysis
 - Many different algorithms! 
@@ -10,12 +10,12 @@
 
 ## The Paradigms & Problems 
 
-- Greedy algorithms: making locally maximising (or minimising) choices 
-- Graph algorithms: shortest path, spanning trees
-- Divide and Conquer: breaking a big problem into smaller problems (and solving them)
-- Dynamic Programming: breaking a big problem into *overlapping* smaller problems 
-- f
-- P vs NP
+- Greedy algorithms [[Intro to Algos]]: making locally maximising (or minimising) choices 
+- Graph algorithms [[Graphs]]: shortest path, spanning trees
+- [[Divide and Conquer]]: breaking a big problem into smaller problems (and solving them)
+- Dynamic Programming [[DP]]: breaking a big problem into *overlapping* smaller problems 
+- [[Reductions]]
+- P vs NP 
 - NP-completeness, mutual reducibility 
 - Graph algorithms 2
-- Flow networks
+- Flow network
