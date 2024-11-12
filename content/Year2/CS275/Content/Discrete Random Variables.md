@@ -35,3 +35,4 @@ $$
 These examples are to show there are **many** different random variables you can define for a single experiment; in fact, there are an uncountable number of functions that map to $\mathbb{R}$, so there are an uncountable number of random variables! 
 
 ## Discrete Random Variables
+
