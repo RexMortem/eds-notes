@@ -1,5 +1,9 @@
 **Year 1**
 
+Note that Year 1 notes may not be complete. 
+
+- CS130 - [[ModuleOverview||Mathematics for Computer Scientists I]]
+
 **Year 2** 
 - CS241 - [[Year2/CS241/Content/Module Details|Operating Systems & Networks]]
 - CS258 - [[Year2/CS258/Content/Module Details|Databases]]
