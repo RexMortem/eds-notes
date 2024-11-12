@@ -1,4 +1,4 @@
-# Probability 
+## Basic Terms
 
 **Scenario:** Imagine that you roll a D10 dice. 
 

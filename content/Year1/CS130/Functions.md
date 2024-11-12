@@ -1,35 +1,4 @@
-# Preqreq Content
-
-Although there are no official pre-reqs for this module, there is frequent usage of set theory (covered in Sets & Numbers and also cs130).
-
-## Sets 
-
-A set is a mathematical object with a notion of membership i.e. whether something is in it or not. 
-
-Since they do NOT have a notion of counting, you can only include an element *once*.
-That is, $\{A, B, C\} = \{A, A, B, C\} = \{A, B, B, C, C\}$.
-(sets are typically wrapped in curly braces $\{\}$)
- 
-We can interact with a set $S$ by asking whether an element $a$ is in the set (with $a \in S$), and asking how many (unique) elements are in the set ($|S|$).
-- For example, let $A = \{1, banana, ⭐\}$
-- $1 \in A$? True.
-- $2 \in A$? False. 
-- $|A| = 3$.
-- $|\{1, 1, 2, 2, 3, 4\}| = 4$.
-
-There are also useful operations between sets
-
-
-Some common (and useful) examples of (non-finite) sets:
-- the natural numbers $\mathbb{N}$
-- the integers $\mathbb{Z}$
-- the 
-
-## Quantifiers 
-
-## Relations 
-
-## Functions
+- Make surjectivity and injectivity mapping to function properties a separate header (as there are uses for surjections/injections not directly related to their inverse)
 
 Functions are a special case of relations where each element in the first set is mapped to *exactly one* element of the second set. 
 - If an element in the first set does not map, then ***existence*** is violated
@@ -58,5 +27,7 @@ Since every $y \in Y$ is mapped to, the size of $|X|$ must be equal to greater t
 
 **Intuition:** which of (injectivity, surjectivity) map to (existence, uniqueness)?
 
+## How Surjectivity, Injectivity maps to Existence, Uniqueness
+## Bijections
+
 A function is ***bijective*** if it's both surjective and injective. 
-Since 
