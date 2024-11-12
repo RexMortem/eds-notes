@@ -2,7 +2,7 @@ Relevant topics:
 - [[Greedy Algorithms]]
 - [[Divide and Conquer]]
 - [[Graphs]] (No content)
-- [[DP|Dynamic Programming]]
+- [[DP|Dynamic Programming]] (No content)
 - [[Complexity of Problems]] (No content)
 - [[Reductions]]
 # Module Overview
