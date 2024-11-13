@@ -4,8 +4,8 @@ A greedy algorithm is an algorithm that, in each step, picks the "obvious" choic
 Sometimes, there are multiple measures to be greedy towards and the difficulty is often choosing which measure. 
 
 We will look at some classic problems with greedy algorithm solutions:
-
-## Interval Scheduling Problem
+- <a href="#IntervalScheduling"> Testing </a>
+## <a name="IntervalScheduling"> Interval Scheduling Problem </a>
 
 The interval scheduling problem is choosing a maximum subset of compatible tasks (jobs). 
 
@@ -49,4 +49,11 @@ print(sol) # [(1, 4), (4, 7), (8, 11)]
 
 ### Proving Earliest Finish Time is Optimal
 
-## Interval Partitioning
+## Interval Partitioning Problem
+
+## Coin Changing Problem
+
+## Optimal Offline Caching Problem
+
+## Selecting Breakpoints Problem
+

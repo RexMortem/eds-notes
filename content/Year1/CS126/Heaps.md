@@ -21,7 +21,6 @@ def heapsort(arr):
     return toReturn
 
 # note that we created a new array; if we coded the heap from scratch, then we can actually do this sort in-place. How?
-
 # Leave a space at the start of the array, and shuffle the newly popped elements to there
 
 sortedArray = heapsort([5, 3, 2, 6, 1, 4, 3, 2, 7, 8])
