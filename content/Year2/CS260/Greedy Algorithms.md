@@ -4,9 +4,9 @@ A greedy algorithm is an algorithm that, in each step, picks the "obvious" choic
 Sometimes, there are multiple measures to be greedy towards and the difficulty is often choosing which measure. 
 
 We will look at some classic problems with greedy algorithm solutions:
-- <a href="#IntervalPartitioning"> Testing </a>
-- [another test](#IntervalPartitioning)
-## <a name="IntervalScheduling"> Interval Scheduling Problem </a>
+- [[#Interval Scheduling Problem|Interval Scheduling]]
+- [[#Interval Partitioning Problem| Interval Partitioning]]
+## Interval Scheduling Problem
 
 The interval scheduling problem is choosing a maximum subset of compatible tasks (jobs). 
 
@@ -22,35 +22,36 @@ By building up this subset, we consider whether to add a compatible job to the s
 
 It turns out that the measure for the optimal algorithm is **earliest finish time**. 
 
-#### Implementation (Python)
+>[!note]- Pseudocode
+>$\text{input} \rightarrow \text{Jobs} (j_{1}, j_{2}, \dots, j_{n})$
 
-```py
-def solve(jobs):
-    # sort by end-duration
-    jobs.sort(key=lambda x: x[1])
-
-    # build a list of elements to be included
-    toReturn = [jobs[0]]
-
-    # add non-conflicting jobs to the list of elements
-    for i in range(1, len(jobs)):
-        # check the latest element included; could also keep a variable for it
-        latestJob = toReturn[len(toReturn)-1]
-
-        # if start time is AFTER end-time of latest job --> we can add
-        if jobs[i][0] >= latestJob[1]:
-            toReturn.append(jobs[i])
-
-    return toReturn
-
-sol = solve([(0, 6),(1, 4), (3, 5), (3, 8), (4, 7), (5, 9), (6, 10), (8, 11)])
-
-print(sol) # [(1, 4), (4, 7), (8, 11)]
-```
+>[!note]- Implementation (Python)
+>```py
+>def solve(jobs):
+>    # sort by end-duration
+>    jobs.sort(key=lambda x: x[1])
+>
+>    # build a list of elements to be included
+>    toReturn = [jobs[0]]
+>
+>    # add non-conflicting jobs to the list of elements
+>    for i in range(1, len(jobs)):
+>        # check the latest element included; could also keep a variable for it
+>        latestJob = toReturn[len(toReturn)-1]
+>
+>        # if start time is AFTER end-time of latest job --> we can add
+>        if jobs[i][0] >= latestJob[1]:
+>            toReturn.append(jobs[i])
+>    
+>    return toReturn
+>    
+>sol = solve([(0, 6),(1, 4), (3, 5), (3, 8), (4, 7), (5, 9), (6, 10), (8, 11)])
+>print(sol) # [(1, 4), (4, 7), (8, 11)]
+>```
 
 ### Proving Earliest Finish Time is Optimal
 
-## <a name="IntervalPartitioning"> Interval Partitioning Problem </a>
+## Interval Partitioning Problem 
 
 ## Coin Changing Problem
 
