@@ -5,6 +5,7 @@ Sometimes, there are multiple measures to be greedy towards and the difficulty i
 
 We will look at some classic problems with greedy algorithm solutions:
 - <a href="#IntervalScheduling"> Testing </a>
+- [another test](#IntervalScheduling)
 ## <a name="IntervalScheduling"> Interval Scheduling Problem </a>
 
 The interval scheduling problem is choosing a maximum subset of compatible tasks (jobs). 
