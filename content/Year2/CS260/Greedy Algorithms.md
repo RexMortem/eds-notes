@@ -10,7 +10,7 @@ We will look at some classic problems with greedy algorithm solutions:
 
 The interval scheduling problem is choosing a maximum subset of compatible tasks (jobs). 
 
-**Explain this more:** If you're looking for the related but harder problem: [[DP]]
+If you're looking for the related problem of choosing a maximum weighted subset of compatible weighted tasks: [[DP#Weighted Interval Scheduling Problem|Weighted Interval Scheduling]].
 
 By building up this subset, we consider whether to add a compatible job to the subset. But by which measure should we greedily choose the next job:
 - Earliest start time
@@ -20,10 +20,15 @@ By building up this subset, we consider whether to add a compatible job to the s
 
 ### Solution
 
-It turns out that the measure for the optimal algorithm is **earliest finish time**. 
+It turns out that the measure for the optimal algorithm is **earliest finish time**, which ensures our machine is free for the next job as soon as possible so we're maximising the time left to handle the other jobs. 
+
+Our approach is:
+1) Sort the jobs by finish time, in ascending order (earliest to latest)
+2) Initialise a set of selected jobs (initially empty)
+3) Take each job j, and add j to selected jobs if it's compatible jobs in the set (we can do this by checking that j starts after the latest job in the set finishes)
 
 >[!note]- Pseudocode
->$\text{input} \rightarrow \text{Jobs} (j_{1}, j_{2}, \dots, j_{n})$
+>$\text{Sort Jobs by}$
 
 >[!note]- Implementation (Python)
 >```py
@@ -52,6 +57,7 @@ It turns out that the measure for the optimal algorithm is **earliest finish tim
 ### Proving Earliest Finish Time is Optimal
 
 ## Interval Partitioning Problem 
+
 
 ## Coin Changing Problem
 

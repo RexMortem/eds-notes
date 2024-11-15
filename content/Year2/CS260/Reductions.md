@@ -1,10 +1,21 @@
 # Reductions
 
-We say a problem X reduces to problem Y iff
+We say a problem X reduces to problem Y iff you can write an algorithm to solve X with calls to Y. In this module, we are concerned with **Polynomial-Time Reductions**.
 
 ## Polynomial-Time Reduction
 
-$X \leq_{P} Y$
+We say a problem $X$ is polynomial-time reducible to $Y$ iff the reduction:
+- has a polynomial number of calls to $Y$
+- has a polynomial number of additional steps 
+
+We write this as $X \leq_{P} Y$.
+
+We treat the algorithm that solves $Y$ as a **black box** meaning we can't change the internals; we can't reduce $X$ to $Y$ with a tiny adjustment to how $Y$ internally works. Even if you understand how $Y$ would be implemented, you can't modify the internals and we call this black box an **oracle** to $Y$.
+
+### Kinds of PT Reductions
+
+- Explain Karp Reductions vs Cook Reductions 
+### Consequences of Polynomial-Time Reduction
 
 ### (Informal) Intuition
 
