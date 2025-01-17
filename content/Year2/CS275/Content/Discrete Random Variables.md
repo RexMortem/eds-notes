@@ -36,3 +36,11 @@ These examples are to show there are **many** different random variables you can
 
 ## Discrete Random Variables
 
+A **Discrete Random Variable (d.r.v.)** is a r.v. with a countable (or finite) sample space. 
+
+### Discrete vs Continuous RVs
+
+If you want random variables for the dice roll experiment above, they will all be *discrete* random variables because the sample space ($\Omega = \{1, 2, 3, 4, 5, 6\}$) is finite.
+
+Alternatively, if you have an experiment for where a truly random value (between 0-1) lies then the random variables for this will all be *continuous* because the sample space ($[0,1]$) is countably infinite.
+

@@ -1,3 +1,6 @@
+Here, I've got some common beginner mistakes (that I experienced while learning psql). 
+Note that there are many mistakes you can make not listed here! Good luck!
+
 >[!warning]- Formal Terms and SQL Terms
 >In the module, we learn formal/theory terms from learning the Relational Model.
 >In SQL, we have different terms for the things inside the Relational Model.
@@ -40,7 +43,14 @@
 >  
 >  **Moral of the story:** Please don't forget your semicolon!
 
- 
+>[!warning]- Strings in PSQL
+>Strings use single quotes e.g. 'I am a string'
+>
+>A more practical example:
+>```sql
+>SELECT * FROM food WHERE description='yummy yummy';
+>```
+
 ## Databases
 
 **create database dbName** - create a database with name *dbName*
@@ -49,3 +59,11 @@
 ## Running SQL
 
 **\i sqlFile** - runs (or **i**nterprets) the SQL file on the database
+
+## Tables (Relations)
+
+**\dt** - gives you a list of tables (**d**escribe **t**ables)
+
+## Display Options
+
+**\pset specialValue toDisplay** - sets options for displaying special values e.g. **\pset null 'UH OH NULLY WULLY'** will display all null values as 'UH OH NULLY WULLY'
