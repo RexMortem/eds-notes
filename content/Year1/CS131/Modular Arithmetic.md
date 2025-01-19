@@ -28,6 +28,7 @@ $10^{2} \overset{9}{\equiv} 10 \overset{9}{\equiv} 1$.
 >$10^{5} \overset{7}{\equiv} 40 \overset{7}{\equiv} 5$
 >$10^{6} \overset{7}{\equiv} 50 \overset{7}{\equiv} 1$
 >$10^{7} \overset{7}{\equiv} 10 \overset{7}{\equiv} 3$
+>*(Between each step, we multiply both sides by 10)*
 >
 >We've encountered a "loop" since $10^{1}$ has the same remainder as $10^{7}$. So if you apply 6 steps then it resets; $10^{1} \overset{7}{\equiv} 10^{7} \overset{7}{\equiv} 10^{13} \overset{7}{\equiv} \dots$ and so on. 
 >
