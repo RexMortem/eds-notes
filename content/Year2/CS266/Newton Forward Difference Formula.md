@@ -1,5 +1,6 @@
 
-We get a more concise formula with additional constraints -> 
+We get a more concise formula with additional constraints ->
+- must be evenly spaced
 
 ## Equally Spaced Points 
 
