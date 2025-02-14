@@ -1,3 +1,4 @@
+*Probably going to deprecate this in favour of merging with [[PDAs]]*
 
 A grammar is a 4-tuple: $(V, \Sigma, R, S)$ where:
 - $V$ is the variables 
