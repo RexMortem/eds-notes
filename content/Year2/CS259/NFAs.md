@@ -1,4 +1,4 @@
-NFAs are DFAs but with a less restricted transition function:
+NFAs are [[DFAs & Regular Languages|DFAs]] but with a less restricted transition function:
 - it can accept the empty string as an input i.e. it can transition without reading a symbol
 - its output is a set of states i.e. it can transition to a number of states
 
@@ -52,3 +52,31 @@ $EClose(S) = \bigcup_{q \in S} EClose(q)$
 - Call EClose after w=0 transition
 - Call EClose on set from w > 1 transition 
 - Call EClose in DFA-NFA proof 
+
+## Converting NFAs into DFAs
+
+This is sometimes called the "powerset construction".
+
+**Intuition:** AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+## Closure Properties
+
+Languages are closed under certain operations, and we can see why using NFAs!
+
+Since we've proved that NFAs have the same expressive power as DFAs (since every DFA can be trivially converted into an NFA, and every NFA can be converted into a DFA), we can prove that these properties hold for regular languages by using NFAs. 
+
+### Complementation 
+
+If a language $L$ is regular, then $\Sigma \setminus L$ is also regular. 
+
+>[!Warning]- Empty String
+>Be careful about what the complement of a language actually is.
+>
+>For instance, if $L = \{w | \; \text{w ends with a 1}\}$.
+>It's tempting to say that obviously $\Sigma \setminus L =  \{w | \; \text{w ends with a 0}\}$.
+>
+>However, this is **WRONG**!
+>
+>The complement of $L$ includes everything not in $L$; this specific $L$ does not include the empty string, and so its complement $\Sigma \setminus L$ includes $\epsilon$. 
+>
+>It's very easy to forget about $\epsilon$, so please be careful!

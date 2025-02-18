@@ -9,6 +9,10 @@
 >
 >**tl;dr:** Be vary careful of permissive patterns
 
+## Pumping Lemma
+
+I will present Sipser's version of the Pumping Lemma for Regular Languages.
+
 
 ## Myhill-Nerode Theorem
 
@@ -18,7 +22,7 @@ Two words $a, b \in L$ are said to be indistinguishable iff
 
 ### Intuition for Myhill-Nerode
 
-Consider a regular language $L$. Since it is regular, there must exist a DFA $A$ for it. 
+Consider a regular language $L$. Since it is regular, there must exist some DFA $A$ for it. 
 
 If the runs of two words $x, y$ lead to the same final state (not necessarily an accepting state) in the DFA $A$, then those two words cannot be distinguished. Whenever you add the same word to the end of $x$ and to the end of $y$, it will lead to the exact same state.
 
@@ -26,7 +30,8 @@ Therefore, two distinguishable words $x, y$ must have runs leading to different 
 
 $|\text{states}| \geq |\text{distinguishable words}|$
 
-So if we can prove there are an infinite number of words that are distinguishable from one another, then we prove there are at least an infinite number of states in $A$. So any DFA for the language $L$ must have a non-finite number of states hence no DFA for $L$ exists (DFAs must have a finite number of states), so $L$ is non-regular.
+So if we can prove there are an infinite number of words that are distinguishable from one another, then we prove there are at least an infinite number of states in $A$. 
+So any DFA for the language $L$ must have a non-finite number of states hence no DFA for $L$ exists (DFAs must have a finite number of states), so $L$ is non-regular.
 
 
 

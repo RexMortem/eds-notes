@@ -1,30 +1,19 @@
-Sipser's *Introduction to the Theory of Computation (2nd Edition)* is very highly recommended.
+Sipser's *Introduction to the Theory of Computation (2nd Edition)* is very highly recommended. Honestly, the more I read Sipser, the more I realise that a lot in the module is from that book. 
 
-We will discuss various models of computation.
-## Basic Terminology 
+**tl;dr of the module** is that we'd like to discuss various models of computations that abstract computers (because it's really quite difficult to reason about actual computers and all their complexity). We start with the simplest ([[DFAs & Regular Languages|DFAs]]), then to something more powerful ([[PDAs]]), and to the big-boys ([[Turing Machines]]).
 
-**Alphabet** - a finite set (of symbols/letters). Examples include:
-- $\{0, 1\}$
-- $\{a,b,c, \dots, z\}$
+Order of reading:
+- [[Languages#Basic Terminology|Basic Terminology in Languages]]
+- [[DFAs & Regular Languages|DFAs]]
+- [[NFAs]]
+- [[Regular Expressions]]
+- [[PDAs]]
 
-We denote an alphabet by $\Sigma$
-In this module, alphabets are finite
+Order is a bit confusing because [[Languages]] has content from many different sections of the module. 
 
-**String (word)** - a finite sequence of symbols. Examples include:
-- $hello$ for $\Sigma = \{a,b,c,\dots,z\}$
-
-$\Sigma^{*}$ means "all strings".
-$\epsilon$ means "empty string".
-$\Sigma^{+}$ means "all non-empty strings" i.e. $\Sigma^{+} = \Sigma^{*} \setminus \{\epsilon\}$
-
->[!Note]- Kleene Star
->The asterisk in $\Sigma^{*}$ is called the "Kleene Star".
+>[!Warning]- Exam Cramming
+>**DON'T CRAM THIS MODULE!!!!!!!**
+>*But if you do...*
 >
->It is defined by $A^{*} = \{x_{1}x_{2} \dots x_{k} \; | \; k \geq 0, \; x_{i} \in A \}.$
->
->***Example 1:*** $\{0\}^{*} = \{\epsilon, 0, 00, 000, \dots\}.$
->***Example 2:*** $\{0,1\}^{*} = \{\epsilon, 0, 1, 00, 01, 10, 11, \dots\}.$
-
-
-**Language** - a subset of all strings. $L \subseteq \Sigma^{*}$
-
+>- Probably not worth looking at "background" sections. 
+>- Just skim and try to answer seminar problems and exam questions from that to test yourself.

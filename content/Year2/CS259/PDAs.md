@@ -12,9 +12,11 @@ Of course, we can only take this transition if the symbol on top of the stack is
 
 At first, it's not obvious that this encapsulates how a stack works. How do we push? How do we pop? How might we check the state of the stack before accepting or more generally, allowing passage to another state in the machine?
 
-**Pushing:** We can represent pushing as $a, \epsilon \rightarrow b$ which means "when reading $a$, we can push $b$ onto the stack" 
+**Intuition:** For pushes/pops, we can view $a, b \rightarrow c$ as meaning "when reading $a$, we pop $b$ off the stack and push $c$ onto the stack by taking this transition".
 
-**Popping:** We can represent popping as $a, b \rightarrow \epsilon$ which means "when reading $a$, we can pop a $b$ off the stack"
+**Pushing:** We can represent just pushing as $a, \epsilon \rightarrow b$ which means "when reading $a$, we can push $b$ onto the stack" 
+
+**Popping:** We can represent just popping as $a, b \rightarrow \epsilon$ which means "when reading $a$, we can pop a $b$ off the stack"
 
 **Checking state:** We can enforce needing a certain symbol on the top of the stack with $a, b \rightarrow b$ which means "when reading $a$, we require a $b$ to take this transition and don't change the stack" (since $b$ replacing $b$ doesn't do anything).
 
@@ -45,5 +47,12 @@ Of course, we might choose to replace "$\bot$" with another symbol at the same t
 
 ## CFGs and PDAs 
 
+$G$ is in Chomsky normal form if all rules:
+$A \rightarrow BC$ where $B,C \neq S$
+$A \rightarrow a$
 
+**Theorem:** For every CFG G, there is a CFG $G^{\prime}$ in CNF s.t. $L(G) = L(G^{\prime})$
 
+HMU 7.1.5
+
+Cooke-Younger-Kasami propose a DP algorithm 
